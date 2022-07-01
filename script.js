@@ -11,7 +11,7 @@ function jump () {
 
    setTimeout(function(){
        dina.classList.remove("jump");
-}, 300)
+}, 400)
 }
 let isAlive = setInterval(function (){
     let dinaTop = parseInt(window.getComputedStyle(dina).getPropertyValue("top"))
@@ -19,4 +19,4 @@ let isAlive = setInterval(function (){
     if (blockLeft < 50 && blockLeft > 0 && dinaTop >= 140) {
         alert("Game over")
     }
-}, 10)  
+}, 10) 
