@@ -1,0 +1,62 @@
+.game {
+   width: 600px;
+   height: 200px;
+   border-bottom: 1px solid #000;
+   margin: auto;
+}
+#dina {
+width: 40px;
+height: 40px;
+background-image: url(img/dinazavr.png);
+background-size: 40px 40px;
+position: relative;
+top: 160px
+}
+#block {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-image: url(img/block1.png);
+    background-size: 40px 40px;
+    top: 120px;
+    left: 650px;
+     animation: blockMov 1s infinite linear;
+}
+
+@keyframes blockMov {
+0%{
+    left: 650px;
+}
+100%{
+    left:-50px;
+}
+}
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+ 0%{
+    top: 150px;
+ }
+ 15%{
+    top: 120px
+ }
+ 30%{
+    top: 100px
+ }
+ 45%{
+    top: 60px;
+ } 
+ 60%{
+    top: 60px
+}
+ 75%{
+    top: 100px;
+ }
+ 90%{
+   top: 120px;
+ }
+ 100%{
+    top: 150px
+ }
+}
